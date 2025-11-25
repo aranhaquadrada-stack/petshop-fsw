@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente e Pet - PetShop Patinhas Felizes</title>
+
+    <!-- Bootstrap (Aulas 7–9) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        /* Estilização básica (CSS opcional da fase 2) */
+        body {
+            background-color: #f8f9fa;
+            padding-bottom: 40px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu simples reutilizado da fase 1 -->
+    <header class="p-3 bg-dark text-white">
+        <nav class="container">
+            <a href="index.html" class="text-white me-3">Início</a>
+            <a href="produtos.html" class="text-white me-3">Produtos</a>
+            <a href="servicos.html" class="text-white me-3">Serviços</a>
+            <a href="cadastro.html" class="text-warning me-3">Cadastro</a>
+            <a href="agendamento.html" class="text-white me-3">Agendamento</a>
+            <a href="ajuda.html" class="text-white">Ajuda</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Cadastro do cliente</h2>
+        <p>Preencha seus dados para prosseguir.</p>
+
+        <!-- FORMULÁRIO – conforme AULA 6 -->
+        <form>
+
+            <!-- Dados do cliente -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto">Informações do Cliente</legend>
+
+                <div class="mb-3">
+                    <label class="form-label">Nome completo *</label>
+                    <input type="text" class="form-control" placeholder="Seu nome" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Endereço *</label>
+                    <input type="text" class="form-control" placeholder="Rua, número e bairro" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">CPF *</label>
+                    <input type="number" class="form-control" placeholder="Somente números" required>
+                </div>
+
+                <label class="form-label d-block">Sexo *</label>
+                <!-- Radio buttons – Aula 6 -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" required>
+                    <label class="form-check-label">Feminino</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo">
+                    <label class="form-check-label">Masculino</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo">
+                    <label class="form-check-label">Outro</label>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label class="form-label">Telefone *</label>
+                    <input type="tel" class="form-control" placeholder="(DDD) 99999-9999" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">E-mail *</label>
+                    <input type="email" class="form-control" placeholder="exemplo@email.com" required>
+                </div>
+            </fieldset>
+
+            <!-- Dados do pet -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto">Informações do Pet</legend>
+
+                <div class="mb-3">
+                    <label class="form-label">Nome do pet *</label>
+                    <input type="text" class="form-control" placeholder="Nome do seu pet" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Raça *</label>
+                    <input type="text" class="form-control" placeholder="Raça do pet" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Idade *</label>
+                    <input type="number" class="form-control" min="0" placeholder="Idade em anos" required>
+                </div>
+
+            </fieldset>
+
+            <!-- Botão final -->
+            <button type="submit" class="btn btn-primary">Enviar cadastro</button>
+
+        </form>
+
+        <footer class="mt-5">
+            <hr>
+            <p>Desenvolvido por Taís – Fundamentos de Sistemas Web.</p>
+            <p>&copy; 2025 – Projeto acadêmico.</p>
+        </footer>
+
+    </main>
+
+    <!-- Bootstrap JS (necessário para componentes) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

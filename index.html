@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <title>PetShop Patinhas Felizes - Início</title>
@@ -17,9 +18,34 @@
             <a href="ajuda.html">Ajuda</a>
         </nav>
         <hr>
-    </header>
+        </header>
 
-    <main>
+<div id="carouselExample" class="carousel slide mb-4">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://via.placeholder.com/1200x400?text=PetShop+Patinhas+Felizes" class="d-block w-100" alt="Banner inicial do petshop">
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/1200x400?text=Promoções+e+Serviços" class="d-block w-100" alt="Promoções e serviços do petshop">
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/1200x400?text=Banho+e+Tosa+com+Carinho" class="d-block w-100" alt="Banho e tosa para pets">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+
+<main>
+
         <h2>Bem-vindo(a) ao nosso petshop</h2>
         <p>
             Este site apresenta alguns dos produtos e serviços oferecidos pelo petshop,
@@ -46,5 +72,7 @@
         <p>&copy; 2025 – Projeto acadêmico.</p>
     </footer>
 
+<!-- Bootstrap JS (necessário para o carrossel funcionar) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
